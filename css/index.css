@@ -1,0 +1,29 @@
+
+h1{
+     color: red;
+    background: black;
+ }
+
+h2{
+    color: grey;
+    font: large/150% sans-serif;
+    border: 1px solid black
+
+
+}
+
+body{
+    color: blue;
+    font: medium Helvetica;
+
+}
+
+/*class selector*/
+p.para_3{
+    font-style: italic;
+}
+
+/*id selector with #*/
+#para_2{
+    font-weight: bold;
+}
