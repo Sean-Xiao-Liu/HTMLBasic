@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get element by id exmaple</title>
+</head>
+<body>
+    <h1>What to buy</h1>
+    <p title="a gentle reminder">Don't forget to buy this stuff.</p>
+    <!--  add id attribute to list  -->
+    <ul id="purchases">
+        <li>A tin of beans</li>
+        <li class="sale">Cheese</li>
+        <li class="sale important">Milk</li>
+    </ul>
+    <!--  one of multiple ways to get element, get element by id    -->
+    <script>
+        alert(typeof document.getElementById("purchases"));
+    </script>
+    <!--    get element by tag will always return an array    -->
+    <script>
+
+        var items = document.getElementsByTagName("li");
+
+        for(var i = 0; i < items.length; i++){
+            alert("This is an " + typeof items[i]);
+        }
+    </script>
+
+    <!--  will match both sale and sale important  -->
+    <script>
+        var classes = document.getElementsByClassName("sale");
+        for(var i = 0 ; i <  classes.length ; i++){
+            alert("This is a class "+typeof classes[i])
+        }
+
+    </script>
+
+</body>
+</html>
