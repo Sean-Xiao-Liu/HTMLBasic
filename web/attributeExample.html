@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get and set attribute example</title>
+</head>
+<body>
+<h1>What to buy</h1>
+    <p title="a gentle reminder">Don't forget to buy this stuff.</p>
+    <!--  add id attribute to list  -->
+    <ul id="purchases">
+        <li>A tin of beans</li>
+        <li class="sale">Cheese</li>
+        <li class="sale important">Milk</li>
+    </ul>
+    <p>This is just a test</p>
+    <script>
+        var paras = document.getElementsByTagName("p");
+
+        for(var i = 0 ; i < paras.length ; i++){
+            var title_text = paras[i].getAttribute("title");
+            if(title_text){
+                paras[i].setAttribute("title","a new title text")
+                alert(title_text = paras[i].getAttribute("title"));
+            }
+        }
+
+
+        var shopping = document.getElementById("purchases"); // element found by id should be unique
+        shopping.setAttribute("title","a list of goods"); // set attribute
+        alert(shopping.getAttribute("title"))
+    </script>
+</body>
+</html>-
