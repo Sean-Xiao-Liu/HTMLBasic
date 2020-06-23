@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+</head>
+
+<!--insert javascript into html file-->
+<script type="text/javascript" src="../script/showPic.js"></script>
+<body>
+<h1>Snapshots</h1>
+<ul>
+    <li>
+    <!-- add onclick to the link, this is a event handler, prevent open pic in the new window and let pic showed i the placeholder   -->
+        <a href="../images/fireworks.jpg" title="A fireworks display" onclick="showPic(this); return false;"> Fireworks</a>
+    </li>
+    <!-- add onmouseover to the link, this is a event handler, prevent open pic in the new window and let pic showed i the placeholder   -->
+    <li>
+        <a href="../images/coffee.jpg" title="A cup of black coffee" onmouseover="showPic(this); return false;"> Coffee</a>
+    </li>
+    <li>
+        <a href="../images/rose.jpg" title="A red, red rose" onmouseover="showPic(this); return false;">Rose</a>
+    </li>
+    <li>
+        <a href="../images/bigben.jpg" title="The famous clock" onclick="showPic(this); return false;"> Big Ben</a>
+    </li>
+</ul>
+
+<!--use a blank pic as place holder, it will be replaced by clicked pic-->
+<img id="placeHolder" src="../images/placeholder.gif" alt="my image gallery" />
+
+
+
+
+</body>
+</html>
